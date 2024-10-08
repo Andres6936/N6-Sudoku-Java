@@ -79,3 +79,4 @@ fabric.properties
 ### JetBrains
 build/
 .gradle/
+!gradle/wrapper/gradle-wrapper.jar
