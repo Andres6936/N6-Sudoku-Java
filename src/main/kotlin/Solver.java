@@ -30,7 +30,7 @@ public class Solver {
         }
     }
 
-    private boolean solve(Grid grid, Optional<Grid.Cell> cell) {
+    private boolean solve(Grid grid, Optional<Cell> cell) {
         if (!cell.isPresent()) {
             return true;
         }
