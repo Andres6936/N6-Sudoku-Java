@@ -3,6 +3,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -71,12 +72,16 @@ fun Dashboard() {
 
 @Composable
 fun Key(text: String, modifier: Modifier = Modifier) {
-    Text(
-        text = text,
+    TextButton(
+        onClick = {},
         modifier = modifier,
-        textAlign = TextAlign.Center,
-        fontSize = 30.sp
-    )
+    ) {
+        Text(
+            text = text,
+            textAlign = TextAlign.Center,
+            fontSize = 30.sp
+        )
+    }
 }
 
 @Composable
