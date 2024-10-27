@@ -24,7 +24,11 @@ fun Cell(value: String, modifier: Modifier = Modifier) {
             .padding(all = 1.dp)
             .border(width = 1.dp, color = Color.LightGray)
     ) {
-        Text(value, modifier = Modifier.align(Alignment.Center))
+        TextButton(
+            onClick = {},
+        ) {
+            Text(value)
+        }
     }
 }
 
